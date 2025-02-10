@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -90,6 +90,19 @@
        <string>the root: , approximate root: , abs error:</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_60">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>271</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Graphical Method and Absolute Error</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_5">
      <property name="cursor">
@@ -98,7 +111,7 @@
      <attribute name="title">
       <string>Task 2</string>
      </attribute>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="lineEdit_answer">
       <property name="geometry">
        <rect>
         <x>430</x>
@@ -156,6 +169,19 @@
       </property>
       <property name="text">
        <string>enter</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>301</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Comparison of Root-Finding Methods</string>
       </property>
      </widget>
     </widget>
@@ -274,7 +300,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_14">
+     <widget class="QLineEdit" name="lineEdit_14_answer">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -310,6 +336,19 @@
        <string>answer</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_58">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>281</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Gaussian Elimination with Partial Pivoting</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
@@ -318,9 +357,9 @@
      <widget class="QWidget" name="gridLayoutWidget_3">
       <property name="geometry">
        <rect>
-        <x>110</x>
-        <y>70</y>
-        <width>421</width>
+        <x>180</x>
+        <y>80</y>
+        <width>351</width>
         <height>251</height>
        </rect>
       </property>
@@ -380,7 +419,7 @@
        <string>solve</string>
       </property>
      </widget>
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="QTextEdit" name="textEdit_answer">
       <property name="geometry">
        <rect>
         <x>280</x>
@@ -408,21 +447,390 @@
      <attribute name="title">
       <string>Task 5</string>
      </attribute>
+     <widget class="QWidget" name="gridLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>110</y>
+        <width>161</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit_32"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLineEdit" name="lineEdit_30"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="lineEdit_31"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="lineEdit_33"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_28"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLineEdit" name="lineEdit_29"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_18"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLineEdit" name="lineEdit_34"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEdit_35"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEdit_36"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>90</y>
+        <width>111</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x                     y</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_16_anwer">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>410</y>
+        <width>211</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>410</y>
+        <width>88</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>solve</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>410</y>
+        <width>51</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>answer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>221</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Polynomial Curve Fitting</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_6">
      <attribute name="title">
       <string>Task 6</string>
      </attribute>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>251</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lagrange’s Interpolation Formula</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>140</y>
+        <width>161</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="lineEdit_39"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="lineEdit_40"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit_37"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLineEdit" name="lineEdit_42"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_19"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEdit_41"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>110</y>
+        <width>111</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x                     y</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>410</y>
+        <width>16</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>F(</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_43">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>410</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>410</y>
+        <width>66</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>) =</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_44_answer">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>410</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>410</y>
+        <width>88</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>answers</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_7">
      <attribute name="title">
       <string>Task 7</string>
      </attribute>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>281</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Romberg’s Integration (from 0 to 1)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>130</y>
+        <width>121</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>∫ x^2 dx</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>150</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>h = </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_for_h">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>150</y>
+        <width>113</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>190</y>
+        <width>66</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>answer: </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>150</y>
+        <width>88</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_8">
      <attribute name="title">
       <string>Task 8</string>
      </attribute>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>230</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>h step = </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>230</y>
+        <width>88</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_for_h_3">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>230</y>
+        <width>113</width>
+        <height>27</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_55">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>270</y>
+        <width>66</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>answer: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_56">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>160</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>dy/dx=ex−y, y(0)=0, for x=0.2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_57">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>40</y>
+        <width>251</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Runge-Kutta 2nd Order</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
