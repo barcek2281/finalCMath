@@ -10,6 +10,7 @@ class MyApp(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("untitled.ui", self)
+        
         self.task5 = PolynomialCurveFitting(self)
         self.task6 = LagrangeInterpolation(self)
         self.task7 = RombergIntegration(self)
