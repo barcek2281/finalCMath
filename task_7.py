@@ -1,3 +1,9 @@
+import sys
+import numpy as np
+import matplotlib.pyplot as plt
+from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QPushButton, QLineEdit, QLabel
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from PyQt6 import uic
 class RombergIntegration(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
