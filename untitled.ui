@@ -143,7 +143,7 @@
         <height>381</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout"/>
+      <layout class="QVBoxLayout" name="tab2_verticalLayout"/>
      </widget>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
