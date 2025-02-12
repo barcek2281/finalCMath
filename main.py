@@ -5,8 +5,11 @@ from PyQt6.QtWidgets import QApplication, QMainWindow
 from task_1 import Task1
 from task_2 import Task2
 from task_3 import Task3
-from task_4 import Task4  # Import Task4
-
+from task_4 import Task4
+from task_5 import Task5
+from task_6 import Task6
+from task_7 import Task7
+from task_8 import Task8
 
 class MyApp(QMainWindow):
     def __init__(self):
@@ -31,6 +34,24 @@ class MyApp(QMainWindow):
 
         # Initialize Task4
         self.task4 = Task4(self)
+
+        # Initialize Task5
+        self.task5 = Task5(self)
+        self.pushButton_4.clicked.connect(self.do_task5)
+
+        # Initialize Task6
+        self.task6 = Task6(self)
+        self.pushButton_5.clicked.connect(self.do_task6)
+
+        # Initialize Task7
+        self.task7 = Task7(self)
+        print(dir(self))
+
+        self.pushButton_6.clicked.connect(self.do_task7)
+
+        # Initialize Task8
+        self.task8 = Task8(self)
+        self.pushButton_13.clicked.connect(self.do_task8)
 
     def do_task1(self):
         try:
@@ -62,6 +83,17 @@ class MyApp(QMainWindow):
             print(e)
             self.label_3.setText("Error with input values")
 
+    def do_task5(self):
+        self.task5.fit_curve()
+
+    def do_task6(self):
+        self.task6.interpolate()
+
+    def do_task7(self):
+        self.task7.romberg_integration()
+
+    def do_task8(self):
+        self.task8.runge_kutta()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
