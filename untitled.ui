@@ -17,14 +17,14 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>-30</x>
       <y>0</y>
       <width>801</width>
       <height>581</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -124,10 +124,10 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>90</y>
-        <width>121</width>
-        <height>19</height>
+        <x>70</x>
+        <y>28</y>
+        <width>231</width>
+        <height>91</height>
        </rect>
       </property>
       <property name="text">
@@ -303,17 +303,17 @@
      <widget class="QLineEdit" name="lineEdit_14_answer">
       <property name="geometry">
        <rect>
-        <x>260</x>
-        <y>390</y>
-        <width>113</width>
-        <height>27</height>
+        <x>132</x>
+        <y>360</y>
+        <width>241</width>
+        <height>111</height>
        </rect>
       </property>
      </widget>
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>70</x>
         <y>390</y>
         <width>66</width>
         <height>19</height>
@@ -424,7 +424,7 @@
        <rect>
         <x>280</x>
         <y>340</y>
-        <width>181</width>
+        <width>321</width>
         <height>111</height>
        </rect>
       </property>
@@ -840,7 +840,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>24</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

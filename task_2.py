@@ -89,34 +89,3 @@ class Task2(QWidget):
             iteration += 1
 
         return c, iteration
-
-
-class MyApp(QMainWindow):
-    def __init__(self):
-        super().__init__()
-
-        # Load the UI file
-        uic.loadUi("untitled.ui", self)
-        self.task2 = Task2(self)
-        self.tab2_verticalLayout.addWidget(self.task2)
-
-        self.tab2_toolButton.clicked.connect(self.do_task2)
-
-    def do_task2(self):
-        try:
-            a, b = map(float, self.tab2_lineEdit.text().split())
-            root_fp, iter_fp = self.task2.false_position(a, b)
-            root_bi, iter_bi = self.task2.bisection(a, b)
-
-            self.tab2_label2.setText(f"False Position: root={root_fp}, iterations={iter_fp}\n"
-                                     f"Bisection: root={root_bi}, iterations={iter_bi}")
-        except Exception as e:
-            print(e)
-            self.tab2_label2.setText("Error with values")
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = MyApp()
-    window.show()
-    sys.exit(app.exec())

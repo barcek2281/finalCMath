@@ -49,22 +49,15 @@ class MyApp(QMainWindow):
             self.task2.plot_graph((a, b))
             root_fp, iter_fp = self.task2.false_position(a, b)
             root_bi, iter_bi = self.task2.bisection(a, b)
-            self.label_2.setText(f"False Position: root={root_fp}, iterations={iter_fp}\n"
-                                 f"Bisection: root={root_bi}, iterations={iter_bi}")
+            self.label_2.setText(f"False Position: root={round(root_fp, 4)}, iterations={iter_fp}\n"
+                                 f"Bisection: root={round(root_bi, 4)}, iterations={iter_bi}")
         except Exception as e:
             print(e)
             self.label_2.setText("Error with values")
 
     def do_task3(self):
         try:
-            coefficients = [
-                list(map(float, self.coeff_1.text().split())),
-                list(map(float, self.coeff_2.text().split())),
-                list(map(float, self.coeff_3.text().split()))
-            ]
-            results = list(map(float, self.results.text().split()))
-            solution = self.task3.solve(coefficients, results)
-            self.label_3.setText(f"Solution: {solution}")
+            self.task3.compute_solution(self)
         except Exception as e:
             print(e)
             self.label_3.setText("Error with input values")
