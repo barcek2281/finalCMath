@@ -24,21 +24,22 @@ class Task6(QMainWindow):
     def interpolate(self):
         try:
             # Read input values
+
             x = np.array([
-                float(self.lineEdit_39.text()),
-                float(self.lineEdit_40.text()),
-                float(self.lineEdit_42.text())
+                float(self.parent().lineEdit_39.text()),
+                float(self.parent().lineEdit_40.text()),
+                float(self.parent().lineEdit_42.text())
             ])
             y = np.array([
-                float(self.lineEdit_19.text()),
-                float(self.lineEdit_41.text()),
-                float(self.lineEdit_37.text())
+                float(self.parent().lineEdit_19.text()),
+                float(self.parent().lineEdit_41.text()),
+                float(self.parent().lineEdit_37.text())
             ])
-            x_val = float(self.lineEdit_43.text())  # F(x) input
+            x_val = float(self.parent().lineEdit_43.text())  # F(x) input
 
             # Compute interpolation
             result = self.lagrange_interpolation(x, y, x_val)
-            self.lineEdit_44_answer.setText(f'{result:.4f}')  # Display answer
+            self.parent().lineEdit_44_answer.setText(f'{result:.4f}')  # Display answer
 
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Invalid input: {e}")
