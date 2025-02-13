@@ -32,34 +32,33 @@ class Task7(QWidget):
                 return
 
             h = float(h_value)
-            result, _ = spi.quad(self.function, 0, 1)  # Используем quad вместо romberg
+            result, _ = spi.quad(self.function, 0, h)  # Интеграл от 0 до h
             self.parent.lineEdit_16_answer_7.setText(f'{result:.4f}')
 
-            # Рисуем график
-            self.plot_function()
+            self.plot_function(h)  # Передаем h в график
 
         except ValueError:
             self.parent.lineEdit_16_answer_7.setText("Error: Invalid input.")
         except Exception as e:
             self.parent.lineEdit_16_answer_7.setText(f'Error: {e}')
 
-    def plot_function(self):
+    def plot_function(self, h):
         self.ax.clear()  # Очищаем старый график
 
         # Данные для графика
-        x = np.linspace(0, 1, 100)
+        x = np.linspace(0, h, 100)  # x теперь до h
         y = self.function(x)
 
         # График функции
         self.ax.plot(x, y, label="f(x) = x²", color='blue')
 
         # Заливка интегрируемой области
-        x_fill = np.linspace(0, 1, 100)
+        x_fill = np.linspace(0, h, 100)
         y_fill = self.function(x_fill)
         self.ax.fill_between(x_fill, y_fill, color='blue', alpha=0.3, label="Integral Area")
 
         # Настройки графика
-        self.ax.set_title("Function f(x) = x² with Integral Area")
+        self.ax.set_title(f"Integral of f(x) = x² from 0 to {h}")
         self.ax.set_xlabel("x")
         self.ax.set_ylabel("f(x)")
         self.ax.legend()
