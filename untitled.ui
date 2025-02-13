@@ -775,10 +775,10 @@
      <widget class="QWidget" name="verticalLayoutWidget_4">
       <property name="geometry">
        <rect>
-        <x>130</x>
+        <x>160</x>
         <y>180</y>
-        <width>481</width>
-        <height>331</height>
+        <width>411</width>
+        <height>321</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="tab2_verticalLayout_task7"/>
@@ -847,7 +847,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>dy/dx=ex−y, y(0)=0, for x=0.2</string>
+       <string>dy/dx=e^x−y, y(0)=0, for x=0.2</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_57">
