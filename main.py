@@ -40,7 +40,8 @@ class MyApp(QMainWindow):
         self.pushButton_4.clicked.connect(self.do_task5)
 
         # Initialize Task6
-        self.task6 = Task6(self)
+        self.task6 = Task6(self)  # Теперь будет корректно
+
         self.pushButton_5.clicked.connect(self.do_task6)
 
         # Initialize Task7

@@ -5,13 +5,11 @@ from PyQt6.uic import loadUi
 
 
 class Task6(QMainWindow):
-    def __init__(self, parent=None):  # Добавляем parent
-        super().__init__(parent)  # Передаем в QMainWindow
+    def __init__(self, parent=None):  # Добавляем parent с дефолтным значением None
+        super().__init__(parent)
         loadUi("untitled.ui", self)
-
-
-        # Connect button to interpolation function
         self.pushButton_5.clicked.connect(self.interpolate)
+
 
     def lagrange_interpolation(self, x, y, x_val):
         result = 0
@@ -48,6 +46,6 @@ class Task6(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = Task6()
+    window = LagrangeInterpolationApp()
     window.show()
     sys.exit(app.exec())
